@@ -1,0 +1,54 @@
+<h1 class="text-center">股票查询</h1>
+<div class="container">
+  <div class="container-fluid">
+    <br />
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 .center-block">
+      <%= form_tag stocks_path, :method => :get do %>
+        <%= label_tag "请输入要查询的股票："%>
+        <br />
+        <%= text_field_tag :stocknumber, "", class: 'form-control', placeholder: "股票代码" %>
+        <br />
+        <%= submit_tag "Submit", class: "btn btn-primary center-block" %>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <hr />
+  <div class="container-fluid">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>股票编号</th>
+          <th>股票名称</th>
+          <th>今日开盘价</th>
+          <th>昨日收盘价</th>
+          <th>当前价格</th>
+          <th>今日开盘价</th>
+          <th>今日最低价</th>
+          <th>涨跌额</th>
+          <th>涨跌百分比</th>
+          <th>成交量</th>
+          <th>成交金额</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+          <td><%= @stock %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
