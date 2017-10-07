@@ -26,7 +26,7 @@
           <th>今日开盘价</th>
           <th>昨日收盘价</th>
           <th>当前价格</th>
-          <th>今日开盘价</th>
+          <th>今日最高价</th>
           <th>今日最低价</th>
           <th>涨跌额</th>
           <th>涨跌百分比</th>
@@ -36,17 +36,17 @@
       </thead>
       <tbody>
         <tr>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
-          <td><%= @stock %></td>
+          <td><%= @gid %></td>
+          <td><%= @name %></td>
+          <td><%= @todayStartPri %></td>
+          <td><%= @yestoEndPri %></td>
+          <td><%= @nowPri %></td>
+          <td><%= @todayMax %></td>
+          <td><%= @todayMin %></td>
+          <td><%= @increase %></td>
+          <td><%= @increPer %></td>
+          <td><%= @traNumber %></td>
+          <td><%= @traAmount %></td>
         </tr>
       </tbody>
     </table>
