@@ -39,7 +39,7 @@
           <td><%= @gid %></td>
           <td><%= @name %></td>
           <td><%= @todayStartPri %></td>
-          <td><%= @yestoEndPri %></td>
+          <td><%= @yestodEndPri %></td>
           <td><%= @nowPri %></td>
           <td><%= @todayMax %></td>
           <td><%= @todayMin %></td>
@@ -51,4 +51,9 @@
       </tbody>
     </table>
   </div>
+  <% if @gopicture %>
+  <div class="container-fluid center-block">
+    <%= image_tag @gopicture, class: "center-block", alt: "MyInc Logo" %>
+  </div>
+  <% end %>
 </div>
